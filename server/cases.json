@@ -1,0 +1,15 @@
+{
+    "clutch" : 
+    {
+        "name" : "Clutch case",
+        "price" : 30,
+        "quantity" : 56000
+    },
+
+    "glove" : 
+    {
+        "name" : "Glove case",
+        "price" : 106,
+        "quantity" : 10000
+    }
+}
