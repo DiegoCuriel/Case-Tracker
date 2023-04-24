@@ -1,0 +1,41 @@
+{
+    "thriller":
+    {
+        "name":"Thriller",
+        "type":"album of pop",
+        "artist":"Michael Jackson",
+        "year":"1982","id":"thriller"
+    },
+    "back in black":
+    {
+        "name":"Back in Black",
+        "type":"album of rock",
+        "artist":"AC/DC",
+        "year":"1980",
+        "id":"back in black"
+    },
+    "the dark side of the moon":
+    {
+        "name":"The Dark Side of the Moon",
+        "type":"album of rock",
+        "artist":"Pink Floyd",
+        "year":"1973",
+        "id":"the dark side of the moon"
+    },
+    "the bodyguard":
+    {
+        "name":"The Bodyguard",
+        "type":"album of pop",
+        "artist":"Whitney Houston",
+        "year":"1992",
+        "id":"the bodyguard"
+    },
+    "bat out of hell":
+    {
+        "name":"Bat Out of Hell",
+        "type":"album of rock",
+        "artist":"Meat Loaf",
+        "year":"1977",
+        "id":"bat out of hell"
+    }
+}
