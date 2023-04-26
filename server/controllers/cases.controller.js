@@ -48,8 +48,34 @@ const createCase = async (req, res) => {
     }
 };
 
+const updateCase = async (req, res) => {
+    try{
+        const { id } = req.params;
+        const { nombre, descripcion, precio, probabilidad, skins_disponibles, fecha_lanzamiento, rareza, imagen_url} = req.body;
+        const connection = await getConnection();
+        const newCase = {
+            nombre,
+            descripcion,
+            precio,
+            probabilidad,
+            skins_disponibles,
+            fecha_lanzamiento,
+            rareza,
+            imagen_url
+        };
+        const result = await connection.query("UPDATE cases SET ? WHERE id = ?", [newCase,id]);
+        res.json(result);
+    }
+    catch(error){
+        res.status(500);
+        res.send(error.message);
+    }
+};
+
+
 export const methods = {
     getCases,
     getCase,
-    createCase
+    createCase,
+    updateCase
 };

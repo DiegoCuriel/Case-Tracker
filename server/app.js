@@ -4,6 +4,7 @@ import morgan from 'morgan';
 import casesRoutes from './routes/cases.routes';
 
 const app = express();
+
 app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*'); // Permite solicitudes desde http://localhost:3000
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); // Permite los métodos HTTP permitidos
