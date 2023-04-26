@@ -1,39 +1,36 @@
 import React, { useState, useEffect } from 'react';
 
 export default function Component() {
-  const [text, setText] = useState('');
-  const [update, setUpdate] = useState('');
-  const [data, setData] = useState('');
 
-  const textOnChange = (event) => {
-    setText(event.target.value);
-  };
-
-  const buttonOnClick = () => {
-    setUpdate(text);
-  };
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('/api/album') // Reemplaza la URL con la ruta correcta de tu API
+    fetch('/getCases') // Reemplaza la URL con la ruta correcta de tu API
       .then((res) => res.json())
-      .then((data) => setData(data.message));
+      .then((data) => setData(data));
   }, []);
+  
+  const handleUpdateData = () => {
+    // Lógica de actualización de datos aquí
+    // Por ejemplo, puedes hacer otra petición a la API para actualizar los datos
+    fetch('/updateCases') // Reemplaza la URL con la ruta correcta de tu API para la actualización de datos
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  };
 
   return (
     <div>
-      <input type="text" value={text} onChange={textOnChange} />
-      <button onClick={buttonOnClick}>Actualizar</button>
-      <p>Escribiendo... {text}</p>
-      <p>Texto: {update}</p>
-      {data && Object.keys(data).map((key) => (
-        <div key={key}>
-          <h3>{data[key].name}</h3>
-          <p>Tipo: {data[key].type}</p>
-          <p>Artista: {data[key].artist}</p>
-          <p>Año: {data[key].year}</p>
-          <p>ID: {data[key].id}</p>
+      {/* Iterar sobre los datos del JSON y mostrarlos en pantalla */}
+      {data.map((caseItem, index) => (
+        <div key={index}>
+          <h2>{caseItem.nombre}</h2>
+          <img src={caseItem.imagen_url} alt={caseItem.nombre} />
+          <p>Precio: {caseItem.precio}</p>
+          <button onClick={handleUpdateData}>Actualizar Datos</button>
         </div>
       ))}
+      {/* Agregar un botón para actualizar datos */}
+      
     </div>
   );
 }
