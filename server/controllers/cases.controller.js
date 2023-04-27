@@ -72,10 +72,26 @@ const updateCase = async (req, res) => {
     }
 };
 
+const deleteCase = async (req, res) => {
+    try{
+        const { id } = req.params;
+        const connection = await getConnection();
+        const result = await connection.query("DELETE FROM cases WHERE id = ?", [id]);
+        res.json(result);
+    }
+    catch(error){
+        res.status(500);
+        res.send(error.message);
+    }
+};
+
+
+
 
 export const methods = {
     getCases,
     getCase,
     createCase,
-    updateCase
+    updateCase,
+    deleteCase
 };

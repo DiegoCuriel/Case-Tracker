@@ -7,5 +7,6 @@ router.get('/getCases', casesController.getCases);
 router.get('/getCase/:id', casesController.getCase);
 router.post('/createCase', casesController.createCase);
 router.put('/updateCase/:id', casesController.updateCase);
+router.delete('/deleteCase/:id', casesController.deleteCase);
 
 export default router;
