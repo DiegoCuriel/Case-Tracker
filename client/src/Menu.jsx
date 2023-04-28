@@ -37,6 +37,32 @@ export default function Menu() {
     }
   };
 
+  const handleCreateNewBox = async () => {
+    try {
+      const response = await fetch('/createCase', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          nombre,
+          descripcion,
+          precio,
+          probabilidad,
+          skins_disponibles,
+          fecha_lanzamiento,
+          rareza,
+          imagen_url
+        })
+      });
+      const data = await response.json();
+      console.log(data);
+      // Hacer algo con la respuesta de la API
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div>
       <p>Menu: </p>
@@ -78,6 +104,9 @@ export default function Menu() {
       </div>
       <div>
         <button onClick={handleUpdateData}>Actualizar Datos</button>
+      </div>
+      <div>
+        <button onClick={handleCreateNewBox}>Crear Nueva Caja</button>
       </div>
     </div>
   );
