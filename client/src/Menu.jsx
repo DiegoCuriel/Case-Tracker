@@ -11,7 +11,7 @@ export default function Menu() {
   const [rareza, setRareza] = useState('');
   const [imagen_url, setImagenUrl] = useState('');
 
-  const handleUpdateData = async () => {
+  const handleUpdateCase = async () => {
     try {
       const response = await fetch(`/updateCase/${id}`, {
         method: 'PUT',
@@ -37,7 +37,7 @@ export default function Menu() {
     }
   };
 
-  const handleCreateNewBox = async () => {
+  const handleCreateCase = async () => {
     try {
       const response = await fetch('/createCase', {
         method: 'POST',
@@ -54,6 +54,19 @@ export default function Menu() {
           rareza,
           imagen_url
         })
+      });
+      const data = await response.json();
+      console.log(data);
+      // Hacer algo con la respuesta de la API
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleDeleteCase = async () => {
+    try {
+      const response = await fetch(`/deleteCase/${id}`, {
+        method: 'DELETE'
       });
       const data = await response.json();
       console.log(data);
@@ -103,10 +116,13 @@ export default function Menu() {
         <input value={imagen_url} onChange={(e) => setImagenUrl(e.target.value)}></input>
       </div>
       <div>
-        <button onClick={handleUpdateData}>Actualizar Datos</button>
+        <button onClick={handleUpdateCase}>Actualizar Datos</button>
       </div>
       <div>
-        <button onClick={handleCreateNewBox}>Crear Nueva Caja</button>
+        <button onClick={handleCreateCase}>Crear Nueva Caja</button>
+      </div>
+      <div>
+        <button onClick={handleDeleteCase}>Borrar Caja</button>
       </div>
     </div>
   );
