@@ -31,7 +31,6 @@ export default function Menu() {
       });
       const data = await response.json();
       console.log(data);
-      // Hacer algo con la respuesta de la API
     } catch (error) {
       console.error(error);
     }
@@ -57,7 +56,6 @@ export default function Menu() {
       });
       const data = await response.json();
       console.log(data);
-      // Hacer algo con la respuesta de la API
     } catch (error) {
       console.error(error);
     }
@@ -70,7 +68,6 @@ export default function Menu() {
       });
       const data = await response.json();
       console.log(data);
-      // Hacer algo con la respuesta de la API
     } catch (error) {
       console.error(error);
     }

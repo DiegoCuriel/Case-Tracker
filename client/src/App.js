@@ -1,7 +1,7 @@
 import './App.css';
 
 import React from "react";
-import Component from './Component';
+import Cases from './Cases';
 import Menu from './Menu';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
         <div>
           <Menu />
-          <Component />      
+          <Cases />      
         </div>
       </header>
     </div>

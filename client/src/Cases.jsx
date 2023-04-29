@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Component() {
+export default function Cases() {
 
   const [data, setData] = useState([]);
 
