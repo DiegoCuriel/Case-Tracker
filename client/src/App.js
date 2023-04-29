@@ -1,18 +1,17 @@
 import './App.css';
 
 import React from "react";
-import Component from './Component';
+import Cases from './Cases';
+import Menu from './Menu';
 
 function App() {
-
   return (
     <div className="App">
       <header className="App-header">
-        
-          <div>
-            <Component />      
-          </div>
-      
+        <div>
+          <Menu />
+          <Cases />      
+        </div>
       </header>
     </div>
   );
