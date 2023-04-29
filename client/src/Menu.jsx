@@ -78,45 +78,45 @@ export default function Menu() {
     <div>
       <div style={{ display: 'flex' }}>
         <div style={{ marginRight: '3px' }}>
-          <p>Id:</p>
-          <input value={id} onChange={(e) => setId(e.target.value)}></input>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Id:</p>
+          <input className='inputValue' value={id} onChange={(e) => setId(e.target.value)}></input>
         </div>
         <div style={{ marginRight: '3px' }}>
-          <p>Nombre:</p>
-          <input value={nombre} onChange={(e) => setNombre(e.target.value)}></input>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Nombre:</p>
+          <input className='inputValue' value={nombre} onChange={(e) => setNombre(e.target.value)}></input>
         </div>
         <div style={{ marginRight: '3px' }}>
-          <p>Descripción:</p>
-          <input value={descripcion} onChange={(e) => setDescripcion(e.target.value)}></input>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Descripción:</p>
+          <input className='inputValue' value={descripcion} onChange={(e) => setDescripcion(e.target.value)}></input>
         </div>
         <div style={{ marginRight: '3px' }}>
-          <p>Precio:</p>
-          <input value={precio} onChange={(e) => setPrecio(e.target.value)}></input>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Precio:</p>
+          <input className='inputValue' value={precio} onChange={(e) => setPrecio(e.target.value)}></input>
         </div>
         <div style={{ marginRight: '3px' }}>
-          <p>Probabilidad:</p>
-          <input value={probabilidad} onChange={(e) => setProbabilidad(e.target.value)}></input>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Probabilidad:</p>
+          <input className='inputValue' value={probabilidad} onChange={(e) => setProbabilidad(e.target.value)}></input>
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <div style={{ marginRight: '3px' }}>
-          <p>Numero Skins:</p>
-          <input value={skins_disponibles} onChange={(e) => setSkinsDisponibles(e.target.value)}></input>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Numero Skins:</p>
+          <input className='inputValue' value={skins_disponibles} onChange={(e) => setSkinsDisponibles(e.target.value)}></input>
         </div>
         <div style={{ marginRight: '3px' }}>
-          <p>Fecha:</p>
-          <input value={fecha_lanzamiento} onChange={(e) => setFechaLanzamiento(e.target.value)}></input>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Fecha:</p>
+          <input className='inputValue' value={fecha_lanzamiento} onChange={(e) => setFechaLanzamiento(e.target.value)}></input>
         </div>
         <div style={{ marginRight: '3px' }}>
-          <p>Rareza:</p>
-          <input value={rareza} onChange={(e) => setRareza(e.target.value)}></input>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Rareza:</p>
+          <input className='inputValue' value={rareza} onChange={(e) => setRareza(e.target.value)}></input>
         </div>
         <div>
-          <p>Imagen URL:</p>
-          <input value={imagen_url} onChange={(e) => setImagenUrl(e.target.value)}></input>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Imagen URL:</p>
+          <input className='inputValue' value={imagen_url} onChange={(e) => setImagenUrl(e.target.value)}></input>
         </div>
       </div>
-      <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div style={{ marginTop: '40px', marginBottom: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <div style={{ marginRight: '10px' }}>
           <button
             className="update-button"

@@ -31,3 +31,18 @@
   background-color: #34495e;
   cursor: pointer;
 }
+
+.inputValue {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.inputValue:focus {
+  outline: none;
+  border-color: #0077cc;
+}
