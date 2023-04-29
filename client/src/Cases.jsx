@@ -5,7 +5,7 @@ export default function Cases() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('/getCases') // Reemplaza la URL con la ruta correcta de tu API
+    fetch('https://api-five-eosin.vercel.app/getCases') // Reemplaza la URL con la ruta correcta de tu API
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
