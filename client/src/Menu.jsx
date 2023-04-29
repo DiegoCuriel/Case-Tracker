@@ -13,7 +13,7 @@ export default function Menu() {
 
   const handleUpdateCase = async () => {
     try {
-      const response = await fetch(`/updateCase/${id}`, {
+      const response = await fetch(`https://api-five-eosin.vercel.app/updateCase/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ export default function Menu() {
 
   const handleCreateCase = async () => {
     try {
-      const response = await fetch('/createCase', {
+      const response = await fetch('https://api-five-eosin.vercel.app/createCase', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -63,7 +63,7 @@ export default function Menu() {
 
   const handleDeleteCase = async () => {
     try {
-      const response = await fetch(`/deleteCase/${id}`, {
+      const response = await fetch(`https://api-five-eosin.vercel.app/deleteCase/${id}`, {
         method: 'DELETE'
       });
       const data = await response.json();
