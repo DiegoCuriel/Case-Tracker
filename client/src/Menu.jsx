@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaSync } from 'react-icons/fa';
 
 export default function Menu() {
   const [id, setId] = useState('');
@@ -117,13 +118,22 @@ export default function Menu() {
       </div>
       <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <div style={{ marginRight: '10px' }}>
-          <button onClick={handleUpdateCase}>Actualizar Caja</button>
+          <button
+            className="update-button"
+            onClick={handleUpdateCase}>Actualizar Caja
+          </button>
         </div>
         <div style={{ marginRight: '10px' }}>
-          <button onClick={handleCreateCase}>Crear Caja</button>
+          <button
+            className="update-button"
+            onClick={handleCreateCase}>Crear Caja
+          </button>
         </div>
         <div style={{ marginRight: '10px' }}>
-          <button onClick={handleDeleteCase}>Borrar Caja</button>
+          <button
+            className="update-button"
+            onClick={handleDeleteCase}>Borrar Caja
+          </button>
         </div>
       </div>
     </div>
