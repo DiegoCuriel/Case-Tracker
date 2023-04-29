@@ -75,7 +75,6 @@ export default function Menu() {
 
   return (
     <div>
-      <p>Menu: </p>
       <div style={{ display: 'flex' }}>
         <div style={{ marginRight: '3px' }}>
           <p>Id:</p>
@@ -117,13 +116,13 @@ export default function Menu() {
         </div>
       </div>
       <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <div>
-          <button onClick={handleUpdateCase}>Actualizar Datos</button>
+        <div style={{ marginRight: '10px' }}>
+          <button onClick={handleUpdateCase}>Actualizar Caja</button>
         </div>
-        <div>
-          <button onClick={handleCreateCase}>Crear Nueva Caja</button>
+        <div style={{ marginRight: '10px' }}>
+          <button onClick={handleCreateCase}>Crear Caja</button>
         </div>
-        <div>
+        <div style={{ marginRight: '10px' }}>
           <button onClick={handleDeleteCase}>Borrar Caja</button>
         </div>
       </div>
