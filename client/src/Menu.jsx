@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaSync } from 'react-icons/fa';
 
 export default function Menu() {
   const [id, setId] = useState('');
