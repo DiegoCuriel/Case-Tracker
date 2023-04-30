@@ -1,4 +1,4 @@
-# Case-Tracker
+# [Case-Tracker](https://mini-reto-2-henna.vercel.app)
 Case Tracker is a web application that displays information about multiple Counter-Strike: Global Offensive cases. It provides details such as release date, price, Average Return of Investment (ROI) and the best item that can be obtained from each case, along with its image. Additionally, the page can be used as a documentation tool.
 
 ## How to Use
