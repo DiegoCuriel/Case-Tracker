@@ -93,7 +93,7 @@ export default function Menu() {
           <input className='inputValue' value={precio} onChange={(e) => setPrecio(e.target.value)}></input>
         </div>
         <div style={{ marginRight: '3px' }}>
-          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Probabilidad:</p>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>ROI:</p>
           <input className='inputValue' value={probabilidad} onChange={(e) => setProbabilidad(e.target.value)}></input>
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function Menu() {
           <input className='inputValue' value={fecha_lanzamiento} onChange={(e) => setFechaLanzamiento(e.target.value)}></input>
         </div>
         <div style={{ marginRight: '3px' }}>
-          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Best Knife:</p>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Best Item:</p>
           <input className='inputValue' value={rareza} onChange={(e) => setRareza(e.target.value)}></input>
         </div>
         <div>
