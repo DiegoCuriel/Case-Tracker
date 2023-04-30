@@ -15,7 +15,7 @@ export default function Cases() {
       {/* Iterar sobre los datos del JSON y mostrarlos en pantalla */}
       {data.map((caseItem, index) => (
         <div key={index}>
-          <h2>{caseItem.nombre}</h2>
+          <h2>ID: {caseItem.id} | {caseItem.nombre}</h2>
           <img src={caseItem.imagen_url} alt={caseItem.nombre} />
           <p>Precio: {caseItem.precio}</p>
         </div>

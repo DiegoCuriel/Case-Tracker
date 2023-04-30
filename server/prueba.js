@@ -29,12 +29,6 @@ app.get("/api/hello", (req, res) => {
     });
   });
   
-  
-  
-  
-  
-  //haz el json para el post
-  
   app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
   });

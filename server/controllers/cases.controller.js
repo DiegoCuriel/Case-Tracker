@@ -3,7 +3,7 @@ import { getConnection } from "../database";
 const getCases = async (req, res) => {
     try{
         const connection = await getConnection();
-        const result = await connection.query("SELECT  nombre, imagen_url, precio FROM cases");
+        const result = await connection.query("SELECT  id, nombre, imagen_url, precio FROM cases");
         res.json(result);
     }
     catch(error){
@@ -84,9 +84,6 @@ const deleteCase = async (req, res) => {
         res.send(error.message);
     }
 };
-
-
-
 
 export const methods = {
     getCases,

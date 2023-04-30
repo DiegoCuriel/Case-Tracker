@@ -20,4 +20,3 @@ app.use(express.json());
 app.use(casesRoutes);
 
 export default app;
-
