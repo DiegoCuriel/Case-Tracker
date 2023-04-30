@@ -3,7 +3,7 @@ import { getConnection } from "../database";
 const getCases = async (req, res) => {
     try{
         const connection = await getConnection();
-        const result = await connection.query("SELECT  id, nombre, imagen_url, precio FROM cases");
+        const result = await connection.query("SELECT  id, nombre, probabilidad, fecha_lanzamiento, rareza, imagen_url, precio FROM cases");
         res.json(result);
     }
     catch(error){

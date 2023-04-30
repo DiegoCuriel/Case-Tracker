@@ -17,7 +17,7 @@ export default function Cases() {
         <div key={index}>
           <h2>ID: {caseItem.id} | {caseItem.nombre}</h2>
           <img src={caseItem.imagen_url} alt={caseItem.nombre} />
-          <p>Fecha de lanzamiento: {caseItem.fecha}</p>
+          <p>Fecha de lanzamiento: {caseItem.fecha_lanzamiento}</p>
           <p>Precio: {caseItem.precio} | Return on Investment: {caseItem.probabilidad}</p>
           <p>Best Knife: {caseItem.rareza}</p>
         </div>
