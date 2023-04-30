@@ -107,7 +107,7 @@ export default function Menu() {
           <input className='inputValue' value={fecha_lanzamiento} onChange={(e) => setFechaLanzamiento(e.target.value)}></input>
         </div>
         <div style={{ marginRight: '3px' }}>
-          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Rareza:</p>
+          <p style={{ marginBottom: '3px', marginTop: '40px' }}>Best Knife:</p>
           <input className='inputValue' value={rareza} onChange={(e) => setRareza(e.target.value)}></input>
         </div>
         <div>
